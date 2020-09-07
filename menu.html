@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mobile App</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <h1>TASHUKERU</h1>
+      <button
+        type="button"
+        class="btn cart-btn"
+        data-toggle="modal"
+        data-target="#cart"
+      >
+        <img
+          src="images/cart.png"
+          class="img-fluid mr-2"
+          height="20"
+          width="20"
+          alt="cart"
+        />
+        <span class="total-count"></span>
+      </button>
+    </header>
+    <!-- banner -->
+    <div>
+      <figure>
+        <img src="images/menu-img.jpg" class="img-fluid" alt="banner image" />
+      </figure>
+    </div>
+    <!-- menu -->
+    <div class="container-fluid filter-container">
+      <div class="full-gallery-section">
+        <div class="button-group mb-2">
+          <button type="button" class="active" id="btn1" data-filter="*">
+            All
+          </button>
+          <button type="button" data-filter=".grocery">Grocery</button>
+          <button type="button" data-filter=".vegitable">Vegitables</button>
+		   <button type="button" data-filter=".bread">Bread</button>
+          <button type="button" data-filter=".medicine">Medicine</button>
+          <button type="button" data-filter=".prasad">Prasad</button>
+          <button type="button" data-filter=".other">Others</button>
+        </div>
+        <div class="row grid">
+          <!-------------------- grocery -------------------------->
+          <div class="col-4 grocery">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>60/-</span>
+                </div>
+                <img
+                  src="images/grocery.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Rice</p>
+                <a
+                  href="#"
+                  data-name="Rice"
+                  data-price="60"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 grocery">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>90/-</span>
+                </div>
+                <img
+                  src="images/grocery.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Dal</p>
+                <a
+                  href="#"
+                  data-name="Dal"
+                  data-price="90"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 grocery">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>40/-</span>
+                </div>
+                <img
+                  src="images/grocery.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Sugar</p>
+                <a
+                  href="#"
+                  data-name="Sugar"
+                  data-price="40"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 grocery">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>35/-</span>
+                </div>
+                <img
+                  src="images/grocery.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Semolina</p>
+                <a
+                  href="#"
+                  data-name="Semolina"
+                  data-price="35"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 grocery">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>20/-</span>
+                </div>
+                <img
+                  src="images/grocery.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Bread</p>
+                <a
+                  href="#"
+                  data-name="Bread"
+                  data-price="20"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 grocery">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>30/-</span>
+                </div>
+                <img
+                  src="images/grocery.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Flour</p>
+                <a
+                  href="#"
+                  data-name="Flour"
+                  data-price="30"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+		  
+          <!-------------------- vegitables -------------------------->
+
+          <div class="col-4 vegitable">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>25/-</span>
+                </div>
+                <img
+                  src="images/vegitable.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Potato</p>
+                <a
+                  href="#"
+                  data-name="Potato"
+                  data-price="25"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 vegitable">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>16/-</span>
+                </div>
+                <img
+                  src="images/vegitable.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Onion</p>
+                <a
+                  href="#"
+                  data-name="Onion"
+                  data-price="16"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 vegitable">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>14/-</span>
+                </div>
+                <img
+                  src="images/vegitable.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Carrot</p>
+                <a
+                  href="#"
+                  data-name="Carrot"
+                  data-price="14"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 vegitable">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>34/-</span>
+                </div>
+                <img
+                  src="images/vegitable.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Corn</p>
+                <a
+                  href="#"
+                  data-name="Corn"
+                  data-price="34"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 vegitable">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>29/-</span>
+                </div>
+                <img
+                  src="images/vegitable.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Cucumber</p>
+                <a
+                  href="#"
+                  data-name="Cucumber"
+                  data-price="29"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 vegitable">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>30/-</span>
+                </div>
+                <img
+                  src="images/vegitable.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Pumpkin</p>
+                <a
+                  href="#"
+                  data-name="Pumpkin"
+                  data-price="30"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <!-------------------------- Medicine ------------------------->
+          <div class="col-4 medicine">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>21/-</span>
+                </div>
+                <img
+                  src="images/medicine.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Medicine1</p>
+                <a
+                  href="#"
+                  data-name="Medicine1"
+                  data-price="21"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 medicine">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>36/-</span>
+                </div>
+                <img
+                  src="images/medicine.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Medicine2</p>
+                <a
+                  href="#"
+                  data-name="Medicine2"
+                  data-price="36"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 medicine">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>68/-</span>
+                </div>
+                <img
+                  src="images/medicine.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Medicine3</p>
+                <a
+                  href="#"
+                  data-name="Medicine3"
+                  data-price="68"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 medicine">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>58/-</span>
+                </div>
+                <img
+                  src="images/medicine.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Medicine4</p>
+                <a
+                  href="#"
+                  data-name="Medicine4"
+                  data-price="58"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 medicine">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>46/-</span>
+                </div>
+                <img
+                  src="images/medicine.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Medicine5</p>
+                <a
+                  href="#"
+                  data-name="Medicine5"
+                  data-price="46"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 medicine">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>96/-</span>
+                </div>
+                <img
+                  src="images/medicine.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Medicine6</p>
+                <a
+                  href="#"
+                  data-name="Medicine6"
+                  data-price="96"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+		  
+		            <!-------------------- bread -------------------------->
+          <div class="col-4 bread">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>25/-</span>
+                </div>
+                <img
+                  src="images/bread/bread.jpg"
+                  alt="Bread"
+                  class="img-fluid"
+                />
+                <p>Bread (S)</p>
+                <a
+                  href="#"
+                  data-name="Bread_350gm"
+                  data-price="25"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 bread">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>50/-</span>
+                </div>
+                <img
+                  src="images/bread/bread2.jpg"
+                  alt="Bread"
+                  class="img-fluid"
+                />
+                <p>Bread (L)</p>
+                <a
+                  href="#"
+                  data-name="Bread_800g"
+                  data-price="50"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 bread">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>18/-</span>
+                </div>
+                <img
+                  src="images/bread/brown_bread.jpg"
+                  alt="Brown Bread"
+                  class="img-fluid"
+                />
+                <p> Brown Bread </p>
+                <a
+                  href="#"
+                  data-name="Brown_Bread_350g"
+                  data-price="18"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 bread">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>18/-</span>
+                </div>
+                <img
+                  src="images/bread/fruit_cake.jpg"
+                  alt="Fruit_Bread_200g"
+                  class="img-fluid"
+                />
+                <p>Fruit Bread</p>
+                <a
+                  href="#"
+                  data-name="Fruit_Bread_200g"
+                  data-price="18"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 bread">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>22/-</span>
+                </div>
+                <img
+                  src="images/bread/pao_bread.jpg"
+                  alt="Pao Bread"
+                  class="img-fluid"
+                />
+                <p>Pao Bread</p>
+                <a
+                  href="#"
+                  data-name="Pao_Bread"
+                  data-price="22"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 bread">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>30/-</span>
+                </div>
+                <img
+                  src="images/bread/multigrain_bread.jpg"
+                  alt="Multigrain Bread"
+                  class="img-fluid"
+                />
+                <p>Multigrain Bread</p>
+                <a
+                  href="#"
+                  data-name="Multigrain_Bread"
+                  data-price="30"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 bread">
+            
+            <div class="our-gallery filter-card">
+              <div class="price-tag">
+                <span>35/-</span>
+              </div>
+              <img
+                src="images/bread/atta_bread.jpg"
+                alt="Multigrain Bread"
+                class="img-fluid"
+              />
+              <p>Atta Bread</p>
+              <a
+                href="#"
+                data-name="Atta_Bread"
+                data-price="35"
+                class="add-to-cart btn btn-secondary"
+                >Add +</a
+              >
+            </div>
+          </a>
+        </div>
+        <div class="col-4 bread">
+            
+          <div class="our-gallery filter-card">
+            <div class="price-tag">
+              <span>90/-</span>
+            </div>
+            <img
+              src="images/bread/jumbo_bread.jpg"
+              alt="Multigrain Bread"
+              class="img-fluid"
+            />
+            <p>Jumbo Bread</p>
+            <a
+              href="#"
+              data-name="Jumbo_Bread"
+              data-price="90"
+              class="add-to-cart btn btn-secondary"
+              >Add +</a
+            >
+          </div>
+        </a>
+      </div>
+      <div class="col-4 bread">
+            
+        <div class="our-gallery filter-card">
+          <div class="price-tag">
+            <span>35/-</span>
+          </div>
+          <img
+            src="images/bread/burger_base.jpg"
+            alt="Burger Base"
+            class="img-fluid"
+          />
+          <p>Burger Base</p>
+          <a
+            href="#"
+            data-name="Burger_Base"
+            data-price="35"
+            class="add-to-cart btn btn-secondary"
+            >Add +</a
+          >
+        </div>
+      </a>
+    </div>
+    <div class="col-4 bread">
+            
+      <div class="our-gallery filter-card">
+        <div class="price-tag">
+          <span>30/-</span>
+        </div>
+        <img
+          src="images/bread/pizza_base.jpg"
+          alt="Pizza Base 8"
+          class="img-fluid"
+        />
+        <p>Pizza Base 8</p>
+        <a
+          href="#"
+          data-name="Pizza_Base_8"
+          data-price="35"
+          class="add-to-cart btn btn-secondary"
+          >Add +</a
+        >
+      </div>
+    </a>
+  </div>
+		  
+           <!------------------------------ Prasad ---------------------->
+ 
+          <div class="col-4 prasad">
+           
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>35/-</span>
+                </div>
+                <img
+                  src="images/prasad/arna.jpg"
+                  alt="Arna"
+                  class="img-fluid"
+                />
+                <p>Arna</p>
+                <a
+                  href="#"
+                  data-name="arna"
+                  data-price="35"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            
+          </div>
+          <div class="col-4 prasad">
+           
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>45/-</span>
+                </div>
+                <img
+                  src="images/prasad/kanika.jpg"
+                  alt="kanika"
+                  class="img-fluid"
+                />
+                <p>Kanika</p>
+                <a
+                  href="#"
+                  data-name="Kanika"
+                  data-price="45"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            
+          </div>
+          <div class="col-4 prasad">
+           
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>40/-</span>
+                </div>
+                <img
+                  src="images/prasad/mitha_dali.jpg"
+                  alt="Mitha Dali"
+                  class="img-fluid"
+                />
+                <p>Mitha Dali</p>
+                <a
+                  href="#"
+                  data-name="Mitha_Dali"
+                  data-price="40"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            
+          </div>
+          <div class="col-4 prasad">
+           
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>45/-</span>
+                </div>
+                <img
+                  src="images/prasad/dalma.jpg"
+                  alt="Dalma"
+                  class="img-fluid"
+                />
+                <p>Dalma</p>
+                <a
+                  href="#"
+                  data-name="Dalma"
+                  data-price="45"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            
+          </div>
+          <div class="col-4 prasad">
+           
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>30/-</span>
+                </div>
+                <img
+                  src="images/prasad/besara.jpg"
+                  alt="Besara"
+                  class="img-fluid"
+                />
+                <p>Besara</p>
+                <a
+                  href="#"
+                  data-name="Besara"
+                  data-price="30"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            
+          </div>
+          <div class="col-4 prasad">
+           
+              <div class="Sagamuga">
+                <div class="price-tag">
+                  <span>35/-</span>
+                </div>
+                <img
+                  src="images/prasad/sagamuga.jpg"
+                  alt="Sagamuga"
+                  class="img-fluid"
+                />
+                <p>Sagamuga</p>
+                <a
+                  href="#"
+                  data-name="Sagamuga"
+                  data-price="35"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            
+          </div>
+		  
+		            <div class="col-4 prasad">
+           
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>30/-</span>
+                </div>
+                <img
+                  src="images/prasad/mohura.jpg"
+                  alt="Mohura"
+                  class="img-fluid"
+                />
+                <p>Mohura</p>
+                <a
+                  href="#"
+                  data-name="Mohura"
+                  data-price="30"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            
+          </div>
+		  
+		            <div class="col-4 prasad">
+           
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>30/-</span>
+                </div>
+                <img
+                  src="images/prasad/khajuri_khatta.jpg"
+                  alt="Khajuri Khata"
+                  class="img-fluid"
+                />
+                <p>Khajuri Khata</p>
+                <a
+                  href="#"
+                  data-name="Khajuri_Khata"
+                  data-price="30"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            
+          </div>
+		  
+		            <div class="col-4 prasad">
+           
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>45/-</span>
+                </div>
+                <img
+                  src="images/prasad/potola_kassa.jpg"
+                  alt="Potala Kasa"
+                  class="img-fluid"
+                />
+                <p>Potolo Kassa</p>
+                <a
+                  href="#"
+                  data-name="Potolo_Kassa"
+                  data-price="45"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            
+          </div>
+		  
+		            <div class="col-4 prasad">
+           
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>80/-</span>
+                </div>
+                <img
+                  src="images/prasad/cheena_khiri.jpg"
+                  alt="Cheena Khiri"
+                  class="img-fluid"
+                />
+                <p>Cheena Khiri</p>
+                <a
+                  href="#"
+                  data-name="Cheena_Khiri"
+                  data-price="80"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            
+          </div>
+          <!------------------------------ other ---------------------->
+          <div class="col-4 other">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>45/-</span>
+                </div>
+                <img
+                  src="images/other.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Other_1</p>
+                <a
+                  href="#"
+                  data-name="Other_1"
+                  data-price="45"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 other">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>36/-</span>
+                </div>
+                <img
+                  src="images/other.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Other_2</p>
+                <a
+                  href="#"
+                  data-name="Other_2"
+                  data-price="36"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 other">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>25/-</span>
+                </div>
+                <img
+                  src="images/other.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Other_3</p>
+                <a
+                  href="#"
+                  data-name="Other_3"
+                  data-price="25"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 other">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>76/-</span>
+                </div>
+                <img
+                  src="images/other.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Other_4</p>
+                <a
+                  href="#"
+                  data-name="Other_4"
+                  data-price="76"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 other">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>416/-</span>
+                </div>
+                <img
+                  src="images/other.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Other_5</p>
+                <a
+                  href="#"
+                  data-name="Other_5"
+                  data-price="416"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-4 other">
+            
+              <div class="our-gallery filter-card">
+                <div class="price-tag">
+                  <span>46/-</span>
+                </div>
+                <img
+                  src="images/other.jpg"
+                  alt="React Calculator by Ashutosh Bisoyi"
+                  class="img-fluid"
+                />
+                <p>Other_6</p>
+                <a
+                  href="#"
+                  data-name="Other_6"
+                  data-price="46"
+                  class="add-to-cart btn btn-secondary"
+                  >Add +</a
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-title" id="exampleModalLabel">Cart</p>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table"></table>
+            <div class="d-flex justify-content-between align-items-center">
+              <h5>Total Price:</h5>
+              <div class="d-flex">
+                <h5 class="mr-1">₹</h5>
+                <h5 class="total-cart"></h5>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <a href="checkout.html">
+              <button type="button" class="btn order-now">Order Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- isotope for gallery -->
+    <script src="js/isotope.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        let $btns = $('.filter-container .button-group button');
+
+        $btns.click(function (e) {
+          $('.filter-container .button-group button').removeClass('active');
+          e.target.classList.add('active');
+
+          let selector = $(e.target).attr('data-filter');
+          $('.filter-container .grid').isotope({
+            filter: selector,
+          });
+          return false;
+        });
+      });
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
