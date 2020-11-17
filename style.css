@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-color:black;
+
 }
 header h1 {
   font-size: 1.5em;
